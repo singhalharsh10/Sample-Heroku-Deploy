@@ -2,3 +2,6 @@
 
 
 2. never set port to 3000 while deployin to heroku
+
+// to deploy databases sites 
+either we can use sqlite 
