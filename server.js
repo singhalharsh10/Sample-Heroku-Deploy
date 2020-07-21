@@ -1,8 +1,10 @@
-const express = reqire('express')
+const express = require('express')
 
 
 const app = express()
 
+// setting up port for heroku deploy
+const PORT = process.env.PORT || 2345
 
 app.get('/', (req, res) => {
     res.send('Hello World')
@@ -11,6 +13,6 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(3000, (req, res) => {
-    console.log('Server Started')
+app.listen(PORT, (req, res) => {
+    console.log(`Server Started at ${PORT}`)
 })

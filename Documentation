@@ -1,1 +1,4 @@
 1. Set scripts in package.json("start": "node server.js")
+
+
+2. never set port to 3000 while deployin to heroku
